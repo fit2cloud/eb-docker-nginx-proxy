@@ -1,14 +1,8 @@
-# Elastic Beanstalk Multi Container PHP-FPM + Nginx Demo App
+# FIT2CLOUD 容器部署示例工程(Multi-container)
 
-This demo app shows you how to run a simple PHP application using the [PHP-FPM](https://registry.hub.docker.com/u/library/php/) and [Nginx](https://registry.hub.docker.com/u/library/nginx/) Docker images from the official Docker library.
+本项目包含两个Images， 一个是 [PHP-FPM](https://registry.hub.docker.com/u/library/php/) 一个是 [Nginx](https://registry.hub.docker.com/u/library/nginx/)
 
-## Run the App
-Follow the steps below to deploy this application to an Elastic Beanstalk Multi-container Docker environment. Accept the default settings unless indicated otherwise in the steps below:
+## FIT2CLOUD 容器部署介绍
 
-1. Download the ZIP file from the [Releases section](https://github.com/awslabs/eb-docker-nginx-proxy/releases) of this repository.
-2. Login to the [Elastic Beanstalk Management Console](https://console.aws.amazon.com/elasticbeanstalk)
-3. Click 'Create New Application' and give your app a name and description
-4. Click 'Create web server' and select an IAM instance profile to use.<br>*Note: Please ensure the IAM instance profile you select has the necessary permissions. For more information, see [Container Instance Role](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecs.html#create_deploy_docker_ecs_role)*
-5. Choose 'Multi-container Docker' in the 'Predefined configuration' dropdown and click `Next`
-6. Upload the ZIP file downloaded in step 1
-7. Review and launch the application
+FIT2CLOUD 容器部署功能，并行于代码部署功能，可以将任意数量／任意类型的容器部署于 FIT2CLOUD 管理的虚机上，并管理其容器版本，监控容器健康检查状态。
+
