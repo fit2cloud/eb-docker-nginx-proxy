@@ -4,15 +4,15 @@
     {
       "name": "php-app",
       "host": {
-        "sourcePath": "/var/app/current/php-app"
+        "sourcePath": "/var/fit2cloud/docker-current-app/php-app"
       }
     },
     {
       "name": "nginx-proxy-conf",
       "host": {
-        "sourcePath": "/var/app/current/proxy/conf.d"
+        "sourcePath": "/var/fit2cloud/docker-current-app/proxy/conf.d"
       }
-    }  
+    }
   ],
   "containerDefinitions": [
     {
@@ -47,10 +47,6 @@
           "sourceVolume": "php-app",
           "containerPath": "/var/www/html",
           "readOnly": true
-        },
-        {
-          "sourceVolume": "awseb-logs-nginx-proxy",
-          "containerPath": "/var/log/nginx"
         },
         {
           "sourceVolume": "nginx-proxy-conf",
