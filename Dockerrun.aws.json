@@ -4,13 +4,13 @@
     {
       "name": "php-app",
       "host": {
-        "sourcePath": "/var/fit2cloud/docker-current-app/php-app"
+        "sourcePath": "/php-app"
       }
     },
     {
       "name": "nginx-proxy-conf",
       "host": {
-        "sourcePath": "/var/fit2cloud/docker-current-app/proxy/conf.d"
+        "sourcePath": "/proxy/conf.d"
       }
     }
   ],
